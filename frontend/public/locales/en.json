@@ -1,0 +1,256 @@
+{
+  "navbar": {
+    "logo": "Car Finance AI Platform",
+    "features": "Features",
+    "models": "Car Models",
+    "finance": "Financing",
+    "testimonials": "Testimonials",
+    "login": "Login",
+    "adminDashboard": "Admin Dashboard",
+    "orderStatus": "My Orders/Approval",
+    "logout": "Logout",
+    "loanApplication": "Loan Application"
+  },
+  "footer": {
+    "company": "Company",
+    "about": "About Us",
+    "careers": "Careers",
+    "press": "Press Releases",
+    "contact": "Contact Us",
+    "services": "Services & Support",
+    "financing": "Loan Services",
+    "insurance": "Car Insurance",
+    "maintenance": "After-sales Service",
+    "warranty": "Warranty Policy",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "compliance": "Compliance Statement",
+    "newsletter": "Subscribe to Newsletter",
+    "newsletterDesc": "Get the latest car finance offers",
+    "email": "Your Email Address",
+    "subscribe": "Subscribe",
+    "rights": "All Rights Reserved"
+  },
+  "home": {
+    "hero": {
+      "title": "Smart Car Finance Platform",
+      "subtitle": "One-stop car selection, loan application, and approval service, with AI avatar assistance throughout the process",
+      "cta": "Consult Now"
+    },
+    "features": {
+      "title": "Core Features",
+      "feature1": {
+        "title": "Various Car Options",
+        "desc": "Covers sedans, SUVs, electric vehicles and more to meet different needs"
+      },
+      "feature2": {
+        "title": "Flexible Financing Plans",
+        "desc": "Low-interest loans, zero down payment, flexible repayment, and customized car purchase plans"
+      },
+      "feature3": {
+        "title": "AI Avatar Service",
+        "desc": "24/7 online support, providing car selection advice and loan guidance"
+      }
+    },
+    "models": {
+      "title": "Popular Car Models",
+      "model1": {
+        "name": "Smart Sedan",
+        "price": "Starting at ¥199,800"
+      },
+      "model2": {
+        "name": "Luxury SUV",
+        "price": "Starting at ¥299,800"
+      },
+      "model3": {
+        "name": "Pure Electric Vehicle",
+        "price": "Starting at ¥249,800"
+      },
+      "learnMore": "Learn More"
+    },
+    "finance": {
+      "title": "Financial Loan Plans",
+      "desc1": "As low as 0% annual interest rate, up to 60 installments to reduce car purchase pressure",
+      "desc2": "Military personnel, teachers, and medical staff enjoy an additional ¥1,000 car purchase subsidy",
+      "desc3": "Calculate monthly payments online with no hidden fees",
+      "calculator": {
+        "title": "Loan Calculator",
+        "carPrice": "Total Car Price",
+        "enterPrice": "Please enter the car price (RMB)",
+        "downPayment": "Down Payment Ratio",
+        "enterPercentage": "Please enter the down payment ratio (e.g., 30 for 30%)",
+        "loanTerm": "Loan Term",
+        "months": "Months",
+        "enterTerm": "Please enter the loan term (months)",
+        "interestRate": "Annual Interest Rate",
+        "enterRate": "Please enter the annual interest rate (e.g., 3 for 3%)",
+        "monthlyPayment": "Estimated Monthly Payment",
+        "calculate": "Calculate Monthly Payment"
+      }
+    },
+    "testimonials": {
+      "title": "User Testimonials",
+      "testimonial1": {
+        "text": "The loan approval was fast, the AI avatar answered all my questions, and the entire car purchase process was very smooth!",
+        "name": "Mr. Zhang",
+        "location": "Beijing"
+      },
+      "testimonial2": {
+        "text": "The zero down payment plan helped me drive my dream car in advance, and the monthly payment is within my budget—highly recommended!",
+        "name": "Ms. Li",
+        "location": "Shanghai"
+      }
+    }
+  },
+  "avatar": {
+    "greeting": "I'm Auto AI Xiaoai. I can provide you with car recommendations, financial loan plans, and loan approval services.",
+    "chatTitle": "AI Car Consultant - Xiaoai",
+    "typing": "Thinking...",
+    "placeholder": "Please enter your question...",
+    "send": "Send",
+    "error": "Sorry, I can't reply temporarily. Please try again later~"
+  },
+  "login": {
+    "title": "Login",
+    "customer": "Car Buyer",
+    "admin": "Admin",
+    "identifier": "Phone/Email",
+    "identifierPlaceholder": "Please enter phone number or email",
+    "identifierError": "Please enter a valid phone number or email",
+    "password": "Password",
+    "passwordPlaceholder": "Please enter your password",
+    "passwordError": "Password must be at least 6 characters long",
+    "forgotPassword": "Forgot Password?",
+    "submit": "Login",
+    "loading": "Logging in...",
+    "loginFailed": "Login failed, please check your credentials",
+    "accountLogin": "Account Login",
+    "wechatLogin": "WeChat Login",
+    "wechatScan": "Scan with WeChat to log in",
+    "noAccount": "Don't have an account?",
+    "register": "Register Now"
+  },
+  "loanApplication": {
+    "title": "Loan Application",
+    "confirmReset": "Are you sure you want to reset all form data?",
+    "saveSuccess": "Draft saved successfully!",
+    "saveFailed": "Failed to save draft. Please try again.",
+    "submitSuccess": "Application submitted successfully!",
+    "submitFailed": "Failed to submit application. Please try again.",
+    "aiError": "Failed to get AI suggestion. Please try again.",
+    "aiSuggestionTitle": "AI Review Suggestion",
+    "aiLoading": "Loading AI suggestion...",
+    "aiSuggestion": "AI Suggestion",
+    "reset": "Reset",
+    "save": "Save",
+    "submit": "Submit",
+    "edit": "Edit",
+    "finalSubmit": "Final Submit",
+    "selectOption": "Select an option",
+    "loginRequired": "Please login to access the loan application.",
+    "documents": {
+      "idCardTitle": "ID Card",
+      "creditReportTitle": "Personal Credit Report",
+      "salarySlipTitle": "Bank Salary Statement",
+      "employmentProofTitle": "Employment (Income) Certificate",
+      "remove": "Remove",
+      "upload": "Upload File",
+      "replace": "Replace File",
+      "invalidType": "Only JPG, PNG and PDF files are allowed",
+      "readFailed": "Failed to read file",
+      "uploadError": "Upload failed, please try again"
+    },
+
+    "personalInfo": {
+      "title": "Personal Information",
+      "fullName": "Full Name",
+      "idNumber": "ID/Passport Number",
+      "phoneNumber": "Phone Number",
+      "email": "Email Address",
+      "address": "Current Address",
+      "employmentStatus": "Employment Status",
+      "employed": "Employed",
+      "selfEmployed": "Self-Employed",
+      "unemployed": "Unemployed",
+      "student": "Student",
+      "monthlyIncome": "Monthly Income (RMB)",
+      "accountHolderName": "Account Holder Name",
+      "accountNumber": "Account Number",
+      "bankName": "Bank Name"
+    },
+    
+    "carSelection": {
+      "invalidPrice": "No price information found for the selected model",
+      "title": "Car Information",
+      "carBrand": "Car Brand",
+      "carModel": "Car Model",
+      "carYear": "Manufacture Year",
+      "carType": "Car Type",
+      "sedan": "Sedan",
+      "suv": "SUV",
+      "electric": "Electric Vehicle",
+      "hybrid": "Hybrid Vehicle",
+      "carPrice": "Car Price (RMB)",
+      "loadBrandError": "Failed to load brand list. Please try again later.",
+      "loadModelError": "Failed to load model list. Please try again later.",
+      "loadPriceError": "Failed to get car price. Please try again later.",
+      "enterPrice": "Please enter the car price (RMB)",
+      "models": {
+        "1 Series": "1 Series",
+        "3 Series": "3 Series",
+        "5 Series": "5 Series",
+        "7 Series": "7 Series",
+        "X1": "X1",
+        "X3": "X3",
+        "X5": "X5",
+        "i3": "i3",
+        "iX3": "iX3",
+        "MINI 3-door": "MINI 3-door",
+        "MINI 5-door": "MINI 5-door",
+        "MINI COUNTRYMAN": "MINI COUNTRYMAN",
+        "MINI Electric": "MINI Electric",
+        "Phantom": "Phantom",
+        "Ghost": "Ghost",
+        "Cullinan": "Cullinan",
+        "Spectre": "Spectre"
+      }
+    },
+    
+    "loanDetails": {
+      "title": "Loan Information",
+      "downPayment": "Down Payment Ratio",
+      "downPaymentAmount": "Down Payment Amount (RMB)",
+      "loanAmount": "Loan Amount (RMB)",
+      "interestRate": "Annual Interest Rate",
+      "loanTerm": "Loan Term",
+      "loanStartDate": "Loan Start Date",
+      "loanEndDate": "Loan End Date",
+      "repaymentFrequency": "Repayment Frequency",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "yearly": "Yearly",
+      "monthlyPayment": "Installment Amount (RMB)",
+      "repaymentDate": "Repayment Date",
+      "repaymentMethod": "Repayment Method",
+      "equalPrincipalInterest": "Equal Principal and Interest",
+      "equalPrincipal": "Equal Principal"
+    },
+    
+    "documentUpload": {
+      "title": "Document Upload",
+      "upload": "Upload Documents",
+      "uploading": "Uploading...",
+      "allowedTypes": "Allowed types: JPG, PNG, PDF, DOC, DOCX",
+      "idCard": "ID Card",
+      "incomeProof": "Income Proof",
+      "creditReport": "Credit Report",
+      "salarySlip": "Salary Slip",
+      "other": "Other",
+      "view": "View",
+      "delete": "Delete",
+      "noDocuments": "No documents uploaded yet"
+    }
+  }
+}

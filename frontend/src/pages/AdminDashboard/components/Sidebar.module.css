@@ -1,0 +1,199 @@
+/* 侧边栏容器基础样式 */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  z-index: 900;
+  overflow: hidden;
+}
+
+/* 侧边栏打开状态 */
+.open {
+  width: 240px;
+  padding: 20px 0;
+}
+
+/* 侧边栏关闭状态 */
+.closed {
+  width: 64px;
+  padding: 20px 0;
+}
+
+/* Logo容器 */
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+/* Logo样式 */
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Logo图标 */
+.logoIcon {
+  font-size: 24px;
+  color: #3498db;
+}
+
+/* Logo文字（仅在打开状态显示） */
+.logoText {
+  margin-left: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* 菜单容器 */
+.menuContainer {
+  padding: 16px 0;
+}
+
+/* 菜单列表 */
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 菜单项 */
+.menuItem {
+  margin-bottom: 4px;
+}
+
+/* 激活的菜单项 */
+.active {
+  background-color: #f0f7ff;
+  border-right: 3px solid #3498db;
+}
+
+/* 菜单链接 */
+.menuLink {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #6b7280;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.menuLink:hover {
+  color: #3498db;
+  background-color: #f9fafb;
+}
+
+/* 菜单图标 */
+.menuIcon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+/* 菜单文字（仅在打开状态显示） */
+.menuLabel {
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+/* 用户区域（底部） */
+.userSection {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* 用户信息容器（仅在打开状态显示） */
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 头像 */
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+/* 用户详情 */
+.userDetails {
+  margin-left: 12px;
+  flex: 1;
+}
+
+/* 用户名 */
+.userName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2329;
+}
+
+/* 用户角色 */
+.userRole {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* 退出按钮（打开状态） */
+.logoutButton {
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.logoutButton:hover {
+  color: #e74c3c;
+}
+
+/* 退出图标（关闭状态） */
+.logoutIcon {
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.logoutIcon:hover {
+  color: #e74c3c;
+  background-color: #f9fafb;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .open {
+    width: 240px;
+  }
+  
+  .closed {
+    width: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Loan Contract - {{ data.contract_number }}</title>
+    <style type="text/css">
+        {{ font_config }}
+    </style>
+</head>
+<body>
+    <!-- 合同标题区域 -->
+    <div class="header">
+        <div class="contract-title">VEHICLE LOAN CONTRACT</div>
+    </div>
+
+    <!-- 合同基本信息 -->
+    <div class="contract-info">
+        <p>Contract Number: <span class="underline underline-short">{{ data.contract_number }}</span></p>
+        <p>Date of Signing: <span class="underline underline-short">{{ data.signing_date }}</span></p>
+        <p>Currency: <span class="underline underline-short">{{ data.currency }}</span></p>
+    </div>
+
+    <!-- 甲方（贷款人）信息 -->
+    <div class="party-section">
+        <div class="party-title">1. PARTY A (LENDER)</div>
+        <ul>
+            <li>Full Legal Name: <span class="underline underline-long">{{ data.lender.name }}</span></li>
+            <li>Commercial Registration Number: <span class="underline underline-medium">{{ data.lender.reg_number }}</span></li>
+            <li>Registered Address: <span class="underline underline-long">{{ data.lender.address }}</span></li>
+            <li>Contact Telephone: <span class="underline underline-medium">{{ data.lender.phone }}</span></li>
+            <li>Email Address: <span class="underline underline-long">{{ data.lender.email }}</span></li>
+            <!-- <li>Authorized Representative: <span class="underline underline-medium">{{ data.lender.authorized_rep }}</span></li> -->
+            <li>Apex Auto Finance GmbH is authorized and supervised by the German Federal Financial Supervisory Authority (BaFin).</li>
+        </ul>
+    </div>
+
+    <!-- 乙方（借款人）信息 -->
+    <div class="party-section">
+        <div class="party-title">2. PARTY B (BORROWER)</div>
+        <ul>
+            <li>Full Name: <span class="underline underline-long">{{ data.borrower.full_name }}</span></li>
+            <li>ID/Passport Number: <span class="underline underline-medium">{{ data.borrower.id_number }}</span></li>
+            <li>Residential Address: <span class="underline underline-long">{{ data.borrower.address }}</span></li>
+            <li>Contact Telephone: <span class="underline underline-medium">{{ data.borrower.phone }}</span></li>
+            <li>Bank Account Details (IBAN): <span class="underline underline-long">{{ data.borrower.iban }}</span></li>
+        </ul>
+    </div>
+
+    <!-- 第1条：贷款金额与用途 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 1: LOAN AMOUNT AND PURPOSE</div>
+        <p>1.1 Party A agrees to provide Party B with a loan of <span class="underline underline-amount"> {{ data.currency }} {{ "%.2f"|format(data.loan_amount) }}</span> (in words: <span class="underline underline-long">{{ data.loan_amount_words }}</span>) for the sole purpose of purchasing the following motor vehicle:
+        </p>
+        <ul>
+            <li>Make: <span class="underline underline-medium">{{ data.vehicle.make }}</span></li>
+            <li>Model: <span class="underline underline-medium">{{ data.vehicle.model }}</span></li>
+            <li>Chassis Number (VIN): <span class="underline underline-long">{{ data.vehicle.chassis_number }}</span></li>
+        </ul>
+        <p>1.2 The loan amount will be directly disbursed to the vehicle dealer's account:
+        <br>Dealer Name: <span class="underline underline-long">{{ data.dealer.name }}</span>
+        <br>Dealer IBAN: <span class="underline underline-long">{{ data.dealer.iban }}</span>
+        </p>
+        <p>1.3 Party B undertakes to provide a valid purchase invoice or sales contract for the specified vehicle to Party A within <span class="underline underline-short">14</span> days after disbursement, failing which Party A reserves the right to demand immediate repayment.
+        </p><!--data.grace_period_days 14-->
+    </div>
+
+    <!-- 第2条：贷款期限 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 2: LOAN TERM</div>
+        <p>2.1 The loan term is <span class="underline underline-short">{{ data.loan_term_months }} months</span> (in words: <span class="underline underline-medium">{{ data.loan_term_words }} months</span>), starting from the Disbursement Date: <span class="underline underline-short">{{ data.disbursement_date }}</span>. The final repayment date shall be the same day of the <span class="underline underline-short">{{ data.loan_term_months }}th month</span> after the Disbursement Date. 
+        </p>
+        <p>2.2 If the due date does not exist in a calendar month (e.g., 31st April), the last day of that month shall be deemed the due date.
+        </p> <!-- lww 这句不太一样 -->
+    </div>
+
+    <!-- 第3条：贷款利率 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 3: LOAN INTEREST RATE</div>
+        <p>3.1 The annual interest rate applicable to this loan is <span class="underline underline-short">{{ data.annual_interest_rate }}%</span> (in words: <span class="underline underline-long">{{ data.interest_rate_words }}</span>), which is fixed for the entire loan term.
+        </p>
+        <p>3.2 The Annual Percentage Rate (APR) is <span class="underline underline-short">{{ data.apr }}%</span>, taking into account the nominal rate of <span class="underline underline-short">{{ data.annual_interest_rate }}%</span> and the repayment schedule. This rate is calculated based on a 365-day year and reflects the true cost of credit over the loan term.
+        </p>
+        <p>3.3 Interest shall be calculated on the basis of the actual number of days the loan is used, with a year counted as 365 days.
+        </p>
+    </div>
+
+    <!-- 第4条：还款方式 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 4: REPAYMENT METHOD</div>
+        <p>4.1 Party B shall repay the loan by way of equal monthly installments of principal and interest. The monthly repayment amount is <span class="underline underline-amount">{{ data.currency }} {{ "%.2f"|format(data.monthly_payment) }}</span>, which includes principal and interest.
+        </p>
+        <p>4.2 Repayments shall be made on the <span class="underline underline-short">{{ data.disbursement_date.split('/')[0]|int }}th</span> day of each month, starting from the first month after the Disbursement Date. Party B shall ensure sufficient funds in the designated bank account by the due date for automatic deduction by Party A.
+        </p>
+        <p>4.3 A detailed repayment schedule is attached as Appendix 1 to this Contract.
+        </p>
+    </div>
+
+    <!-- 第5条：担保条款 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 5: SECURITY PROVISIONS</div>
+        <p>5.1 Party B pledges the purchased vehicle (chassis number: <span class="underline underline-short">{{ data.vehicle.chassis_number }}</span>) for the loan obligations under this Contract. Party B shall assist Party A in completing the vehicle mortgage registration with the relevant authority within <span class="underline underline-short">15</span> days after the Disbursement Date.
+        </p><!-- data.mortgage_registration_days -->
+        <p>5.2 During the mortgage period, Party B shall maintain valid comprehensive insurance for the vehicle, with Party A named as the priority beneficiary. Insurance documents shall be provided to Party A for record within <span class="underline underline-short">7</span> days after purchase. Party B shall maintain comprehensive motor insurance (Vollkaskoversicherung) with a coverage amount not less than the original purchase price of the vehicle. Proof of insurance (including policy number and validity period) shall be submitted to Party A within 7 days of policy issuance or renewal. Failure to maintain such insurance constitutes a material breach under Article 7.
+        </p><!-- data.insurance_proof_days -->
+        <p>5.3 Party B shall not transfer, lease, or dispose of the collateral in any way without Party A's prior written consent.
+        </p>
+        <p>5.4 The registration of the mortgage shall be jointly processed by Party A and Party B. Party A shall initiate the registration procedure, and Party B shall provide all necessary documents. The registration fee shall be borne by Party A.
+        </p>
+    </div>
+
+    <!-- 第6条：双方的权利与义务 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 6: RIGHTS AND OBLIGATIONS</div>
+        <p>6.1 Party A's Rights and Obligations
+        </p>
+        <p>6.1.1 Has the right to verify the authenticity of Party B's application materials and supervise the use of the loan.
+        </p>
+        <p>6.1.2 Shall disburse the loan in full to the designated dealer account within 5 working days after the completion of all formalities.
+        </p>
+        <p>6.1.3 Shall provide Party B with monthly repayment reminders and annual interest statements upon request.
+        </p>
+        <p>6.1.4 Shall keep Party B's personal and financial information confidential, except as required by law or regulatory authorities.
+        </p>
+        <p>6.1.5 In the event that Party A fails to disburse the loan within <span class="underline underline-short">5</span> working days after completion of all formalities without justified cause, Party B shall have the right to withdraw from the contract or claim compensation for any resulting damages (e.g., lost vehicle purchase opportunity).
+        </p><!-- data.disbursement_days -->
+        <p>6.2 Party B's Rights and Obligations
+        </p>
+        <p>6.2.1 Has the right to obtain the loan as agreed upon full and accurate provision of application materials.
+        </p>
+        <p>6.2.2 Shall use the loan solely for the purchase of the designated vehicle and provide proof of purchase to Party A within <span class="underline underline-short">30</span> days.
+        </p><!-- data.purchase_proof_days -->
+        <p>6.2.3 Shall repay the loan in full and on time. Any change to the repayment account must be notified to Party A in writing <span class="underline underline-short">10</span> days in advance.
+        </p><!-- data.notice_days_for_changes -->
+        <p>6.2.4 Shall notify Party A immediately in case of vehicle damage, loss, or change of residential address/contact information.
+        </p>
+        <!-- If foreign borrower -->
+        {% if data.german_resident_personal_use is true or data.german_resident_personal_use | lower == "yes" %}
+        <p>6.2.5 Party B confirms that they are a resident of Germany and that this loan is granted for personal use within the territory of Germany.
+        </p>
+        {% endif %}
+    </div>
+
+    <!-- 第7条：违约责任 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 7: DEFAULT PROVISIONS</div>
+        <p>7.1 If Party B fails to make repayment on time, a late payment fee of <span class="underline underline-short">0.05%</span> of the overdue amount shall be charged daily, starting from the first day of default. A late fee of up to <span class="underline underline-short">1%</span> of the overdue installment may be charged for each month of delay, not exceeding <span class="underline underline-short">5%</span> of the total overdue amount.
+        </p><!-- data.late_payment_fee_daily %  5%--><!-- data.late_payment_fee_monthly % 1%--><!-- data.late_payment_fee_max % 5%-->
+        <p>7.2 If the overdue period exceeds <span class="underline underline-short">30</span> days, Party A has the right to demand immediate repayment of all outstanding principal and interest, and/or exercise the right of mortgage to dispose of the collateral. Before exercising the right to accelerate repayment, Party A shall send a written reminder to Party B, specifying the overdue amount and granting a minimum grace period of <span class="underline underline-short">14</span> days. Only upon continued non-payment after such notice may Party A declare the entire loan immediately due.
+        </p><!-- data.default_period_days  30--><!-- data.grace_period_days  14-->
+        <p>7.3 If Party B breaches the security provisions (e.g., failing to maintain insurance or disposing of the collateral without consent), Party A may charge a penalty of <span class="underline underline-short">5%</span> of the outstanding principal.
+        </p><!-- data.security_breach_penalty % 5%-->
+    </div>
+
+    <!-- 第8条：纠纷解决 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 8: DISPUTE RESOLUTION</div>
+        <p>8.1 All disputes arising from the performance of this Contract shall be resolved through friendly negotiation first. If negotiation fails, either party may submit the dispute to the competent court in Karlsruhe, Germany for litigation, which shall be governed by German law.
+        </p>
+    </div>
+
+    <!-- 第9条：其他条款 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 9: OTHER PROVISIONS</div>
+        <p>9.1 This Contract shall take effect upon the signature of both parties. It is made in 3 originals, with Party A holding 2 originals and Party B holding 1 original, all having equal legal effect.
+        </p>
+        <p>9.2 Appendices to this Contract (Repayment Schedule, Vehicle Purchase Agreement, and Party B's ID copy) are integral parts of this Contract and have the same legal effect.
+        </p>
+        <p>9.3 Any amendment to this Contract shall be valid only if made in writing and signed by both parties.
+        </p>
+        <!-- If foreign borrower -->
+        {% if data.german_resident_personal_use is true or data.german_resident_personal_use | lower == "yes" %}
+        <p>9.4 This contract is concluded in the English language. Both parties acknowledge and agree that the English version is legally binding.
+        </p>
+        {% endif %}
+    </div>
+
+    <!-- 第9a条：撤销权 -->
+    <div class="article">
+        <div class="article-title">ARTICLE 9a: RIGHT OF WITHDRAWAL</div>
+        <p>1.Party B, as a consumer, has the right to withdraw from this contract within <span class="underline underline-short">4</span> days without giving any reason.
+        </p><!-- data.withdrawal_period_days -->
+        <p>2.To exercise the right of withdrawal, Party B must inform Party A in a clear statement (e.g., by letter, fax, or email) of his decision to withdraw. The following sample statement may be used: I hereby withdraw from my vehicle loan contract signed on date.
+        </p>
+        <p>3.Party B may use the enclosed withdrawal form (Appendix 2) for this purpose, but is not required to do so.
+        </p>
+        <p>4.If Party B withdraws from the contract, Party A shall repay all amounts received from Party B, including interest, without undue delay and no later than <span class="underline underline-short">10</span> days from the date of receipt of the withdrawal notice.
+        </p>
+        <p>5.Party B shall make any payments using the same means of payment unless otherwise agreed.
+        </p>
+    </div>
+
+    <div class="article">
+        <div class="article-title">ARTICLE 9b: EARLY REPAYMENT</div>
+        <p>1.Party B may repay the entire loan or a portion thereof in advance at any time.
+        </p>
+        <p>2.In the event of full early repayment, Party A may charge a prepayment fee of up to <span class="underline underline-short">1%</span> of the prepaid principal amount, provided that the remaining term exceeds one year.
+        </p><!-- data.prepayment_fee_percent % 1%-->
+        <p>3.Party B shall notify Party A in writing at least <span class="underline underline-short">15</span> days prior to the intended prepayment date.
+        </p><!-- 这里没用 prepayment_notice_days_words --><!-- data.prepayment_notice_days -->
+        <p>4.Upon receipt of full repayment, Party A shall release the vehicle mortgage without delay and return all relevant documents to Party B.
+        </p>
+    </div>
+
+
+    <!-- 附录1：还款计划 -->
+    <div class="appendix">
+        <div class="appendix-title">APPENDIX 1: REPAYMENT SCHEDULE</div>
+        <table class="repayment-schedule">
+            <thead>
+                <tr>
+                    <th>Installment No.</th>
+                    <th>Due Date</th>
+                    <th>Total Payment ({{ data.currency }})</th>
+                    <th>Principal ({{ data.currency }})</th>
+                    <th>Interest ({{ data.currency }})</th>
+                    <th>Remaining Principal ({{ data.currency }})</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for payment in data.repayment_schedule %}
+                <tr>
+                    <td>{{ payment.month }}</td>
+                    <td>{{ payment.date }}</td>
+                    <td>{{ "%.2f"|format(payment.payment_amount) }}</td>
+                    <td>{{ "%.2f"|format(payment.principal) }}</td>
+                    <td>{{ "%.2f"|format(payment.interest) }}</td>
+                    <td>{{ "%.2f"|format(payment.remaining_principal) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <p>Total Repayment: {{ data.currency }} {{ "%.2f"|format(data.total_repayment) }}
+        </p>
+    </div>
+
+    <!-- 附录2：撤销权通知模板 -->
+    <div class="appendix">
+        <div class="appendix-title">APPENDIX 2: WITHDRAWAL FORM</div>
+        <p style="margin-top: 20px;">To: <span class="underline underline-long">{{ data.lender.name }}</span></p>
+        <p><span class="underline underline-long">{{ data.lender.address }}</span></p>
+        <p><span class="underline underline-long">{{ data.lender.phone }} | {{ data.lender.email }}</span></p>
+        
+        <p style="margin-top: 30px; font-weight: bold;">NOTICE OF WITHDRAWAL</p>
+        
+        <p>I/We hereby give notice that I/we withdraw from my/our vehicle loan contract with your company, signed on <span class="underline underline-short">{{ data.signing_date }}</span>.</p>
+        
+        <p style="margin-top: 20px;">Details:</p>
+        <ul>
+            <li>Borrower's Full Name: <span class="underline underline-long">{{ data.borrower.full_name }}</span></li>
+            <li>Contract Number: <span class="underline underline-short">{{ data.contract_number }}</span></li>
+            <li>Date of this notice: <span class="underline underline-short">________/________/________</span></li>
+        </ul>
+        
+        <p style="margin-top: 30px;">Signature of Borrower: <span class="underline underline-signature"></span></p>
+        <p>Date: <span class="underline underline-short">________/________/________</span></p>
+    </div>
+
+    <!-- 签字区域 -->
+    <div class="signature-section">
+        <!-- 甲方签字 -->
+        <div class="signature-block">
+            <p>Party A (Lender): <span class="underline underline-long">{{ data.lender.name }}</span></p>
+            <p>Authorized Representative Signature: <span class="underline underline-signature">____________________________________</span></p>
+            <p>Printed Name: <span class="underline underline-medium">{{ data.lender.authorized_rep }}</span></p>
+            <!-- <p>Date: <span class="underline underline-short">{{ data.lender.rep_sign_date }}</span></p> -->
+            <p>Date: <span class="underline underline-short">________/________/________</span></p>
+        </div>
+
+        <!-- 乙方签字 -->
+        <div class="signature-block">
+            <p>Party B (Borrower): <span class="underline underline-long">{{ data.borrower.full_name }}</span></p>
+            <p>Borrower Signature: <span class="underline underline-signature">____________________________________</span></p>
+            <p>ID Number: <span class="underline underline-medium">{{ data.borrower.id_number }}</span></p>
+            <!-- <p>Date: <span class="underline underline-short">{{ data.borrower.sign_date }}</span></p> -->
+            <p>Date: <span class="underline underline-short">________/________/________</span></p>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div style="margin-top: 160px; font-size: 10pt; text-align: center;">
+        <p>This contract is executed in triplicate, with Party A holding 2 originals and Party B holding 1 original, all having equal legal effect.</p>
+    </div>
+</body>
+</html>

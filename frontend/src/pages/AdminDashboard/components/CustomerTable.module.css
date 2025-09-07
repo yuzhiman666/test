@@ -1,0 +1,154 @@
+/* 表格容器整体样式 */
+.container {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* 表格容器（缩放状态） */
+.zoomed {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 表格头部区域（标题+操作） */
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* 表格标题 */
+.tableHeader h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2329;
+}
+
+/* 表格控制区（筛选+操作按钮） */
+.tableControls {
+  display: flex;
+  align-items: center;
+  width: auto;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* 筛选控件区域 */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* 操作按钮区域 */
+.tableActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 表格主体容器 */
+.tableContainer {
+  width: 100%;
+  min-height: 400px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+}
+
+/* 加载状态覆盖层 */
+.tableContainer .ant-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* 表格单元格样式修正 */
+.tableContainer .ant-table-cell {
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+/* 操作按钮样式 */
+.actionButton {
+  padding: 4px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 分页区域 */
+.pagination {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* 响应式调整 */
+@media (max-width: 1200px) {
+  .tableControls {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px;
+  }
+  
+  .tableHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filters {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .tableActions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .tableContainer {
+    min-height: 300px;
+  }
+  
+  .pagination {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* 小屏幕下表格允许横向滚动 */
+  .tableContainer .ant-table-wrapper {
+    overflow-x: auto;
+  }
+}
+
+/* 选中行样式增强（可选） */
+.ant-table-tbody > tr.ant-table-row-selected > td {
+  background-color: #f0f7ff;
+}
+
+/* 表头样式增强 */
+.ant-table-thead > tr > th {
+  background-color: #f5f7fa;
+  font-weight: 500;
+}

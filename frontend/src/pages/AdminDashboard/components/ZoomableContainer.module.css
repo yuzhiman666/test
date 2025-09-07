@@ -1,0 +1,136 @@
+/* 缩放容器主样式 */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none; /* 禁用浏览器默认触摸行为 */
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+/* 可缩放内容容器 */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center center;
+  transition: transform 0.1s ease-out; /* 平滑缩放过渡 */
+}
+
+/* 交互状态样式 */
+.container:hover {
+  cursor: grab;
+}
+
+.container.grabbing {
+  cursor: grabbing;
+}
+
+.container.zoomed {
+  cursor: grab;
+}
+
+/* 缩放控制按钮容器 */
+.controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10;
+}
+
+/* 控制按钮样式 */
+.controlButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  font-size: 18px;
+  color: #333;
+}
+
+.controlButton:hover {
+  background-color: #f5f7fa;
+  transform: translateY(-2px);
+}
+
+.controlButton:active {
+  transform: translateY(0);
+}
+
+/* 重置按钮特殊样式 */
+.resetButton {
+  background-color: #1677ff;
+  color: white;
+  border-color: #1677ff;
+}
+
+.resetButton:hover {
+  background-color: #0958d9;
+}
+
+/* 缩放比例指示器 */
+.scaleIndicator {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 4px 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* 加载状态覆盖层 */
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .controls {
+    bottom: 16px;
+    right: 16px;
+  }
+  
+  .controlButton {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .scaleIndicator {
+    top: 12px;
+    right: 12px;
+    font-size: 11px;
+  }
+}
+
+/* 禁用状态 */
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

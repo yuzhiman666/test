@@ -1,0 +1,10 @@
+*.pyc
+.env
+*Keys.json
+logs
+frontend/package-lock.json
+# 忽略整个虚拟环境目录（如果 venv 在 backend 目录下）
+backend/venv/
+venv/
+loan_template_backup
+loan_contract

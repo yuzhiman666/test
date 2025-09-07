@@ -1,0 +1,129 @@
+EconomicEconomic Vehicle Financing Plans (Series 1/2/X1/i3, etc.)
+Plan 1: 50-50 Basic Plan
+Applicable Models: BMW001, BMW002, BMW003
+Plan Type: 50-50 Financial Plan
+Down Payment Ratio: 50%
+Term: 24 months
+Final Payment Ratio: 50%
+Monthly Payment Feature: Minimal monthly payment
+End-of-Term Option: Final payment must be settled in full
+
+Economic Vehicle Financing Plans (Series 1/2/X1/i3, etc.)
+Plan 2: Joy Loan Zero-Pressure Plan
+Applicable Models: BMW015, BMW016, BMW022
+Plan Type: Joy Loan Financial Plan
+Down Payment Ratio: 0%
+Term: 36 months
+Final Payment Ratio: 0%
+Monthly Payment Feature: Equal monthly payments
+End-of-Term Option: Full ownership
+
+Economic Vehicle Financing Plans (Series 1/2/X1/i3, etc.)
+Plan 3: Flexible Joy Loan Light-Burden Plan
+Applicable Models: BMW001, BMW015
+Plan Type: Flexible Joy Loan Plan
+Down Payment Ratio: 5%
+Term: 36 months
+Final Payment Ratio: 25%
+Monthly Payment Feature: Low monthly payment + flexible final payment
+End-of-Term Option: Full settlement / Extension / Trade-in
+
+Mid-to-High-End Vehicle Financing Plans (Series 3/4/5/X3/X5, etc.)
+Plan 1: 50-50 Balanced Plan
+Applicable Models: BMW004, BMW005, BMW006
+Plan Type: 50-50 Financial Plan
+Down Payment Ratio: 50%
+Term: 24 months
+Final Payment Ratio: 50%
+Monthly Payment Feature: Minimal monthly payment
+End-of-Term Option: Final payment must be settled in full
+
+Mid-to-High-End Vehicle Financing Plans (Series 3/4/5/X3/X5, etc.)
+Plan 2: Joy Loan Flexible Plan
+Applicable Models: BMW007, BMW008, BMW009
+Plan Type: Joy Loan Financial Plan
+Down Payment Ratio: 10%
+Term: 60 months
+Final Payment Ratio: 0%
+Monthly Payment Feature: Long-term equal monthly payments
+End-of-Term Option: Full ownership
+
+Mid-to-High-End Vehicle Financing Plans (Series 3/4/5/X3/X5, etc.)
+Plan 3: Flexible Joy Loan Premium Plan
+Applicable Models: BMW010, BMW017, BMW004
+Plan Type: Flexible Joy Loan Plan
+Down Payment Ratio: 10%
+Term: 36 months
+Final Payment Ratio: 20%
+Monthly Payment Feature: Flexible monthly payment + low pressure
+End-of-Term Option: Full settlement / Extension / Trade-in
+
+Luxury/Performance Vehicle Financing Plans (Series 7/8/X7/M Series/i7, etc.)
+Plan 1: 50-50 Premier Plan
+Applicable Models: BMW011, BMW012, BMW013
+Plan Type: 50-50 Financial Plan
+Down Payment Ratio: 50%
+Term: 24 months
+Final Payment Ratio: 50%
+Monthly Payment Feature: Minimal monthly payment
+End-of-Term Option: Final payment must be settled in full
+
+Luxury/Performance Vehicle Financing Plans (Series 7/8/X7/M Series/i7, etc.)
+Plan 2: Joy Loan Flagship Plan
+Applicable Models: BMW014, BMW021, BMW025
+Plan Type: Joy Loan Financial Plan
+Down Payment Ratio: 20%
+Term: 60 months
+Final Payment Ratio: 0%
+Monthly Payment Feature: Ultra-long-term equal monthly payments
+End-of-Term Option: Full ownership
+
+Luxury/Performance Vehicle Financing Plans (Series 7/8/X7/M Series/i7, etc.)
+Plan 3: Flexible Joy Loan Ultimate Plan
+Applicable Models: BMW026, BMW027, BMW011
+Plan Type: Flexible Joy Loan Plan
+Down Payment Ratio: 15%
+Term: 36 months
+Final Payment Ratio: 15%
+Monthly Payment Feature: Ultra-low monthly payment + flexible disposal
+End-of-Term Option: Priority trade-in right + extension option
+
+New Energy Exclusive Financing Plans (i Series)
+Plan 1: i Joy Loan Basic Plan
+Applicable Models: BMW016, BMW018, BMW022
+Plan Type: Joy Loan Financial Plan
+Down Payment Ratio: 0%
+Term: 36 months
+Final Payment Ratio: 0%
+Monthly Payment Feature: Equal monthly payments
+End-of-Term Option: Full ownership
+
+New Energy Exclusive Financing Plans (i Series)
+Plan 2: i Flexible Joy Loan Upgrade Plan
+Applicable Models: BMW012, BMW023, BMW024
+Plan Type: Flexible Joy Loan Plan
+Down Payment Ratio: 8%
+Term: 36 months
+Final Payment Ratio: 12%
+Monthly Payment Feature: New energy-exclusive low monthly payment
+End-of-Term Option: Battery protection trade-in right
+
+Convertible/Sports Car Exclusive Financing Plans
+Plan 1: Convertible 50-50 Plan
+Applicable Models: BMW002, BMW006, BMW014
+Plan Type: 50-50 Financial Plan
+Down Payment Ratio: 50%
+Term: 24 months
+Final Payment Ratio: 50%
+Monthly Payment Feature: Season-adaptable monthly payment
+End-of-Term Option: Final payment must be settled in full
+
+Convertible/Sports Car Exclusive Financing Plans
+Plan 2: Sports Car Flexible Joy Loan Plan
+Applicable Models: BMW028, BMW007, BMW013
+Plan Type: Flexible Joy Loan Plan
+Down Payment Ratio: 12%
+Term: 36 months
+Final Payment Ratio: 22%
+Monthly Payment Feature: Performance car low monthly payment plan
+End-of-Term Option: Priority upgrade right

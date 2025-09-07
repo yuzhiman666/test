@@ -1,0 +1,134 @@
+/* 主容器布局 */
+.dashboardContainer {
+  padding: 20px;
+  min-height: 100%;
+  background-color: #f5f7fa;
+}
+
+/* 页面标题 */
+.pageTitle {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2329;
+}
+
+/* 统计卡片容器 */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* 统计卡片样式 */
+.statCard {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+}
+
+.statTitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2329;
+  margin-bottom: 4px;
+}
+
+.statChange {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.statIncrease {
+  color: #10b981;
+}
+
+.statDecrease {
+  color: #ef4444;
+}
+
+/* 图表区域布局 */
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+  .chartsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 图表卡片样式 */
+.chartCard {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  min-height: 300px;
+}
+
+.chartTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1f2329;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 3D 图表容器 */
+.threeDChartContainer {
+  width: 100%;
+  height: 400px;
+  margin-top: 16px;
+}
+
+/* 客户列表区域 */
+.customerListSection {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* 加载状态 */
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+/* 筛选器容器 */
+.filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+/* 按钮组样式 */
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+}

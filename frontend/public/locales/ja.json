@@ -1,0 +1,256 @@
+{
+  "navbar": {
+    "logo": "カーファイナンスAIプラットフォーム",
+    "features": "機能紹介",
+    "models": "車種",
+    "finance": "金融プラン",
+    "testimonials": "ユーザーレビュー",
+    "login": "ログイン",
+    "adminDashboard": "管理者ダッシュボード",
+    "orderStatus": "マイオーダー/審査状況",
+    "logout": "ログアウト",
+    "loanApplication": "ローン申請"
+  },
+  "footer": {
+    "company": "会社情報",
+    "about": "会社について",
+    "careers": "採用情報",
+    "press": "ニュースリリース",
+    "contact": "お問い合わせ",
+    "services": "サービスサポート",
+    "financing": "ローンサービス",
+    "insurance": "自動車保険",
+    "maintenance": "アフターサービス",
+    "warranty": "保証ポリシー",
+    "legal": "法律条項",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "cookies": "クッキーポリシー",
+    "compliance": "コンプライアンス声明",
+    "newsletter": "ニュースレター購読",
+    "newsletterDesc": "最新のカーファイナンス特典を受け取る",
+    "email": "メールアドレス",
+    "subscribe": "購読する",
+    "rights": "全ての権利を留保する"
+  },
+  "home": {
+    "hero": {
+      "title": "スマートカーファイナンスプラットフォーム",
+      "subtitle": "車選び、ローン申請、審査までワンストップサービス、AIアバターが全程サポート",
+      "cta": "今すぐ相談"
+    },
+    "features": {
+      "title": "コア機能",
+      "feature1": {
+        "title": "多様な車種選択",
+        "desc": "セダン、SUV、電気自動車など多様な車種を取り扱い、様々なニーズに応えます"
+      },
+      "feature2": {
+        "title": "柔軟な金融プラン",
+        "desc": "低金利ローン、0頭金、フレキシブル返済で、専門の車購入プランをカスタマイズします"
+      },
+      "feature3": {
+        "title": "AIアバターサービス",
+        "desc": "24時間オンラインで回答し、車選びのアドバイスとローンガイダンスを提供します"
+      }
+    },
+    "models": {
+      "title": "人気車種",
+      "model1": {
+        "name": "スマートセダン",
+        "price": "199,800元～"
+      },
+      "model2": {
+        "name": "高級SUV",
+        "price": "299,800元～"
+      },
+      "model3": {
+        "name": "純電気自動車",
+        "price": "249,800元～"
+      },
+      "learnMore": "詳細を見る"
+    },
+    "finance": {
+      "title": "金融ローンプラン",
+      "desc1": "最低0%年利、最長60回分割払いで、車購入の負担を軽減します",
+      "desc2": "軍人、教師、医療従事者は追加で1,000元の車購入補助を受けられます",
+      "desc3": "オンラインで月々の支払いを計算、隠れた費用は一切ありません",
+      "calculator": {
+        "title": "ローン計算機",
+        "carPrice": "車両総額",
+        "enterPrice": "車両価格を入力してください（元）",
+        "downPayment": "頭金比率",
+        "enterPercentage": "頭金比率を入力してください（例：30は30%を意味）",
+        "loanTerm": "ローン期間",
+        "months": "ヶ月",
+        "enterTerm": "ローン期間を入力してください（ヶ月）",
+        "interestRate": "年利",
+        "enterRate": "年利を入力してください（例：3は3%を意味）",
+        "monthlyPayment": "月々支払い予測",
+        "calculate": "月々支払いを計算"
+      }
+    },
+    "testimonials": {
+      "title": "ユーザーレビュー",
+      "testimonial1": {
+        "text": "ローン審査が速く、AIアバターが全ての質問に回答してくれて、車購入の全过程が非常にスムーズでした！",
+        "name": "張さん",
+        "location": "北京"
+      },
+      "testimonial2": {
+        "text": "0頭金プランで夢の車を早く手に入れることができ、月々の支払いも負担できる範囲内で、推薦します！",
+        "name": "李さん",
+        "location": "上海"
+      }
+    }
+  },
+  "avatar": {
+    "greeting": "カーアイアショウです。車選びの推薦、金融ローンプラン、ローン審査などのサービスを提供できます",
+    "chatTitle": "AIカーコンサルタント - アイアショウ",
+    "typing": "思考中",
+    "placeholder": "ご質問を入力してください...",
+    "send": "送信",
+    "error": "申し訳ありませんが、一時的に回答できません。後で再試してください～"
+  },
+  "login": {
+    "title": "ログイン",
+    "customer": "車購入顧客",
+    "admin": "管理者",
+    "identifier": "電話番号/メールアドレス",
+    "identifierPlaceholder": "電話番号またはメールアドレスを入力してください",
+    "identifierError": "有効な電話番号またはメールアドレスを入力してください",
+    "password": "パスワード",
+    "passwordPlaceholder": "パスワードを入力してください",
+    "passwordError": "パスワードは最低6文字以上で入力してください",
+    "forgotPassword": "パスワードを忘れた場合？",
+    "submit": "ログイン",
+    "loading": "ログイン中...",
+    "loginFailed": "ログインに失敗しました。アカウント情報を確認してください",
+    "accountLogin": "アカウントログイン",
+    "wechatLogin": "WeChatログイン",
+    "wechatScan": "WeChatでQRコードをスキャンしてログインしてください",
+    "noAccount": "アカウントをお持ちでない場合？",
+    "register": "今すぐ登録"
+  },
+  "loanApplication": {
+    "title": "ローン申請",
+    "confirmReset": "すべてのフォームデータをリセットしてもよろしいですか？",
+    "saveSuccess": "ドラフトが正常に保存されました！",
+    "saveFailed": "ドラフトの保存に失敗しました。再試行してください。",
+    "submitSuccess": "申請が正常に送信されました！",
+    "submitFailed": "申請の送信に失敗しました。再試行してください。",
+    "aiError": "AIサジェスチョンの取得に失敗しました。再試行してください。",
+    "aiSuggestionTitle": "AI審査サジェスチョン",
+    "aiLoading": "AIサジェスチョンを読み込んでいます...",
+    "aiSuggestion": "AIサジェスチョン",
+    "reset": "リセット",
+    "save": "保存",
+    "submit": "送信",
+    "edit": "編集",
+    "finalSubmit": "最終送信",
+    "selectOption": "オプションを選択",
+    "loginRequired": "ローン申請にアクセスするにはログインしてください。",
+    "documents": {
+      "idCardTitle": "身分証明書",
+      "creditReportTitle": "個人信用報告書",
+      "salarySlipTitle": "銀行給与明細",
+      "employmentProofTitle": "在職（収入）証明書",
+      "remove": "削除",
+      "upload": "ファイルをアップロード",
+      "replace": "ファイルを置き換え",
+      "invalidType": "JPG、PNG、PDFファイルのみ許可されています",
+      "readFailed": "ファイルの読み取りに失敗しました",
+      "uploadError": "アップロードに失敗しました。再試行してください"
+    },
+    
+    "personalInfo": {
+      "title": "個人情報",
+      "fullName": "氏名",
+      "idNumber": "身分証明書番号",
+      "phoneNumber": "電話番号",
+      "email": "メールアドレス",
+      "address": "現住所",
+      "employmentStatus": "職業状況",
+      "employed": "正社員",
+      "selfEmployed": "自営業",
+      "unemployed": "無職",
+      "student": "学生",
+      "monthlyIncome": "月収（元）",
+      "accountHolderName": "口座名義人",
+      "accountNumber": "銀行口座番号",
+      "bankName": "開設銀行"
+    },
+    
+    "carSelection": {
+      "invalidPrice": "選択した車種の価格情報が見つかりません",
+      "title": "車両情報",
+      "carBrand": "車のブランド",
+      "carModel": "車種",
+      "carYear": "製造年",
+      "carType": "車のタイプ",
+      "sedan": "セダン",
+      "suv": "SUV",
+      "electric": "電気自動車",
+      "hybrid": "ハイブリッド車",
+      "carPrice": "車の価格（元）",
+      "loadBrandError": "ブランドリストの読み込みに失敗しました。後で再試行してください",
+      "loadModelError": "車種リストの読み込みに失敗しました。後で再試行してください",
+      "loadPriceError": "車両価格の取得に失敗しました。後で再試行してください",
+      "enterPrice": "車両価格を入力してください（元）",
+      "models": {
+        "1シリーズ": "1シリーズ",
+        "3シリーズ": "3シリーズ",
+        "5シリーズ": "5シリーズ",
+        "7シリーズ": "7シリーズ",
+        "X1": "X1",
+        "X3": "X3",
+        "X5": "X5",
+        "i3": "i3",
+        "iX3": "iX3",
+        "MINI 3ドア": "MINI 3ドア",
+        "MINI 5ドア": "MINI 5ドア",
+        "MINI COUNTRYMAN": "MINI COUNTRYMAN",
+        "MINI 電気自動車": "MINI 電気自動車",
+        "ファントム": "ファントム",
+        "ゴースト": "ゴースト",
+        "カリナン": "カリナン",
+        "スペクター": "スペクター"
+      }
+    },
+    
+    "loanDetails": {
+      "title": "ローン情報",
+      "downPayment": "頭金比率",
+      "downPaymentAmount": "頭金額（元）",
+      "loanAmount": "ローン額（元）",
+      "interestRate": "年利",
+      "loanTerm": "ローン期間",
+      "loanStartDate": "ローン開始日",
+      "loanEndDate": "ローン終了日",
+      "repaymentFrequency": "返済周期",
+      "monthly": "毎月",
+      "quarterly": "毎四半期",
+      "yearly": "毎年",
+      "monthlyPayment": "毎回の返済額（元）",
+      "repaymentDate": "毎回の返済日",
+      "repaymentMethod": "返済方法",
+      "equalPrincipalInterest": "元利均等",
+      "equalPrincipal": "元金均等"
+    },
+    
+    "documentUpload": {
+      "title": "文書のアップロード",
+      "upload": "文書をアップロード",
+      "uploading": "アップロード中...",
+      "allowedTypes": "許可されているタイプ：JPG、PNG、PDF、DOC、DOCX",
+      "idCard": "身分証明書",
+      "incomeProof": "所得証明",
+      "creditReport": "信用レポート",
+      "salarySlip": "給与明細",
+      "other": "その他",
+      "view": "表示",
+      "delete": "削除",
+      "noDocuments": "まだ文書がアップロードされていません"
+    }
+  }
+}

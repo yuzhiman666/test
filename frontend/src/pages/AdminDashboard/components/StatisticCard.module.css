@@ -1,0 +1,102 @@
+/* 统计卡片基础样式 */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 卡片悬停效果 */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* 卡片头部区域 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+/* 标题样式 */
+.title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* 图标容器 */
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* 数值显示样式 */
+.value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+/* 趋势指示器 */
+.trend {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 上升趋势 */
+.up {
+  color: #2ecc71;
+}
+
+/* 下降趋势 */
+.down {
+  color: #e74c3c;
+}
+
+/* 趋势图标间距 */
+.trend svg {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+/* 卡片背景装饰 */
+.decoration {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0.05;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+  }
+  
+  .value {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,75 @@
+[
+    {
+        "scenario": "used_vehicle",
+        "description": "Used/second-hand vehicle loans",
+        "legal_items": [
+            {
+                "id": "USED-001",
+                "title": "Vehicle Mileage",
+                "content": "Contract includes the used vehicle's mileage",
+                "application": "All used vehicle loans"
+            },
+            {
+                "id": "USED-002",
+                "title": "TÜV Reference (if applicable)",
+                "content": "If vehicle is over 3 years old, contract mentions TÜV",
+                "application": "Used vehicles over 3 years old"
+            }
+        ]
+    },
+    {
+        "scenario": "foreign_borrower",
+        "description": "Loans for non-German/non-EU borrowers",
+        "legal_items": [
+            {
+                "id": "FOREIGN-001",
+                "title": "Residency Note",
+                "content": "Contract mentions borrower's German residency",
+                "application": "All foreign borrower loans"
+            },
+            {
+                "id": "FOREIGN-002",
+                "title": "Contract Language",
+                "content": "Contract states its language (e.g., 'in English')",
+                "application": "All foreign borrower loans"
+            }
+        ]
+    },
+    {
+        "scenario": "early_repayment",
+        "description": "Early loan repayment rules",
+        "legal_items": [
+            {
+                "id": "EARLY-001",
+                "title": "Early Repayment Allowed",
+                "content": "Contract says early repayment is permitted",
+                "application": "All auto loans"
+            },
+            {
+                "id": "EARLY-002",
+                "title": "Fee Mention",
+                "content": "Contract notes if there's an early repayment fee",
+                "application": "All auto loans"
+            }
+        ]
+    },
+    {
+        "scenario": "cross_border",
+        "description": "Vehicles used outside Germany",
+        "legal_items": [
+            {
+                "id": "CROSS-001",
+                "title": "Usage Country",
+                "content": "Contract states which country the vehicle will be used in",
+                "application": "Cross-border loans"
+            },
+            {
+                "id": "CROSS-002",
+                "title": "Applicable Law",
+                "content": "Contract mentions German law applies",
+                "application": "Cross-border loans"
+            }
+        ]
+    }
+]
+    

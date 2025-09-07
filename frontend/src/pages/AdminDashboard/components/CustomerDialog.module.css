@@ -1,0 +1,122 @@
+/* 对话框标题容器 */
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* 状态标签样式 */
+.statusChip {
+  margin-left: 12px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* 对话框内容区域 */
+.content {
+  margin-top: 8px;
+}
+
+/* 信息卡片样式 */
+.section {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* 卡片头部区域 */
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+/* 卡片头部图标 */
+.sectionIcon {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #1677ff;
+}
+
+/* 信息网格容器 */
+.infoGrid {
+  padding: 0 16px 16px;
+}
+
+/* 单个信息项 */
+.infoItem {
+  display: flex;
+  padding: 4px 0;
+  line-height: 1.6;
+}
+
+/* 信息标签样式 */
+.label {
+  width: 100px;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+/* 审核反馈输入框 */
+.feedbackField {
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+/* 反馈提示文字 */
+.feedbackNote {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  padding-left: 2px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .titleContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .statusChip {
+    margin-left: 0;
+  }
+  
+  .infoItem {
+    flex-direction: column;
+  }
+  
+  .label {
+    width: auto;
+    margin-bottom: 4px;
+  }
+}
+
+/* 状态标签样式（通过 CSS 控制大小，替代 size 属性） */
+.statusChip {
+  margin-left: 12px;
+  padding: 2px 8px;  /* 减小内边距实现小尺寸效果 */
+  font-size: 12px;  /* 控制文字大小 */
+  line-height: 1.4;
+  height: auto;     /* 自适应高度 */
+}
+
+/* 其他原有样式保持不变... */
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content {
+  margin-top: 8px;
+}
+
+.section {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}

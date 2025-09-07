@@ -1,0 +1,272 @@
+{
+  "navbar": {
+    "logo": "汽车金融AI平台",
+    "features": "功能介绍",
+    "models": "汽车型号",
+    "finance": "金融方案",
+    "testimonials": "用户评价",
+    "login": "登录",
+    "adminDashboard": "管理员面板",
+    "orderStatus": "我的订单/审批",
+    "logout": "注销",
+    "loanApplication": "贷款申请"
+  },
+  "footer": {
+    "company": "公司信息",
+    "about": "关于我们",
+    "careers": "加入我们",
+    "press": "新闻动态",
+    "contact": "联系我们",
+    "services": "服务支持",
+    "financing": "贷款服务",
+    "insurance": "汽车保险",
+    "maintenance": "售后维护",
+    "warranty": "保修政策",
+    "legal": "法律条款",
+    "terms": "使用条款",
+    "privacy": "隐私政策",
+    "cookies": "Cookie 政策",
+    "compliance": "合规声明",
+    "newsletter": "订阅通讯",
+    "newsletterDesc": "获取最新汽车金融优惠",
+    "email": "您的邮箱地址",
+    "subscribe": "订阅",
+    "rights": "保留所有权利"
+  },
+  "home": {
+    "hero": {
+      "title": "智能汽车金融平台",
+      "subtitle": "一站式选车、贷款、审批服务，AI 数字人为您全程协助",
+      "cta": "立即咨询"
+    },
+    "features": {
+      "title": "核心功能",
+      "feature1": {
+        "title": "多样汽车选择",
+        "desc": "涵盖轿车、SUV、电动车等多种车型，满足不同需求"
+      },
+      "feature2": {
+        "title": "灵活金融方案",
+        "desc": "低息贷款、0首付、弹性还款，定制专属购车计划"
+      },
+      "feature3": {
+        "title": "AI 数字人服务",
+        "desc": "24小时在线解答，提供选车建议和贷款指导"
+      }
+    },
+    "models": {
+      "title": "热门车型",
+      "model1": {
+        "name": "智能轿车",
+        "price": "¥199,800 起"
+      },
+      "model2": {
+        "name": "豪华SUV",
+        "price": "¥299,800 起"
+      },
+      "model3": {
+        "name": "纯电动车",
+        "price": "¥249,800 起"
+      },
+      "learnMore": "了解详情"
+    },
+    "finance": {
+      "title": "金融贷款方案",
+      "desc1": "最低 0% 年利率，最长 60 期分期，减轻购车压力",
+      "desc2": "军人、教师、医护人员额外享受 1000 元购车补贴",
+      "desc3": "在线计算月供，透明无隐藏费用",
+      "calculator": {
+        "title": "贷款计算器",
+        "carPrice": "车辆总价",
+        "enterPrice": "请输入车辆价格（元）",
+        "downPayment": "首付比例",
+        "enterPercentage": "请输入首付比例（如 30 代表 30%）",
+        "loanTerm": "贷款期限",
+        "months": "月",
+        "enterTerm": "请输入贷款期限（月）",
+        "interestRate": "年利率",
+        "enterRate": "请输入年利率（如 3 代表 3%）",
+        "monthlyPayment": "月供预估",
+        "calculate": "计算月供"
+      }
+    },
+    "testimonials": {
+      "title": "用户评价",
+      "testimonial1": {
+        "text": "贷款审批很快，AI数字人解答了我所有疑问，整个购车过程非常顺畅！",
+        "name": "张先生",
+        "location": "北京"
+      },
+      "testimonial2": {
+        "text": "0首付方案帮我提前开上了心仪的车，月供也在承受范围内，推荐！",
+        "name": "李女士",
+        "location": "上海"
+      }
+    }
+  },
+  "avatar": {
+    "greeting": "我是汽车小爱，我可以为您提供选车推荐、金融贷款方案、贷款审核等服务",
+    "chatTitle": "AI 汽车顾问 - 小爱",
+    "typing": "正在思考",
+    "placeholder": "请输入您的问题...",
+    "send": "发送",
+    "error": "抱歉，暂时无法回复，请稍后再试~"
+  },
+  "login": {
+    "title": "登录",
+    "customer": "购车客户",
+    "admin": "管理员",
+    "identifier": "手机号/邮箱",
+    "identifierPlaceholder": "请输入手机号或邮箱",
+    "identifierError": "请输入有效的手机号或邮箱",
+    "password": "密码",
+    "passwordPlaceholder": "请输入密码",
+    "passwordError": "密码长度不能少于6位",
+    "forgotPassword": "忘记密码？",
+    "submit": "登录",
+    "loading": "登录中...",
+    "loginFailed": "登录失败，请检查账号密码是否正确",
+    "accountLogin": "账号登录",
+    "wechatLogin": "微信登录",
+    "wechatScan": "请使用微信扫描二维码登录",
+    "noAccount": "还没有账号？",
+    "register": "立即注册"
+  },
+  "loanApplication": {
+    "title": "贷款申请",
+    "confirmReset": "确定要重置所有表单数据吗？",
+    "saveSuccess": "草稿保存成功！",
+    "saveFailed": "保存草稿失败，请重试。",
+    "submitSuccess": "申请提交成功！",
+    "submitFailed": "提交申请失败，请重试。",
+    "aiError": "获取AI建议失败，请重试。",
+    "aiSuggestionTitle": "AI审核建议",
+    "aiLoading": "正在加载AI建议...",
+    "aiSuggestion": "AI建议",
+    "reset": "重置",
+    "save": "保存",
+    "submit": "提交",
+    "edit": "修改",
+    "finalSubmit": "最终提交",
+    "selectOption": "选择选项",
+    "loginRequired": "请登录以访问贷款申请。",
+    "confirm": "确认",
+    "confirmTitle": "确认贷款申请",
+    "confirmInfo": "请确认以下申请信息",
+    "back": "返回修改",
+    "invalidData": "无效的申请数据",
+    "documents": {
+      "idCardTitle": "身份证",
+      "creditReportTitle": "个人征信报告",
+      "salarySlipTitle": "银行工资流水",
+      "employmentProofTitle": "在职(收入)证明",
+      "remove": "删除",
+      "upload": "上传文件",
+      "replace": "替换文件",
+      "invalidType": "仅支持JPG、PNG和PDF格式的文件",
+      "readFailed": "文件读取失败",
+      "uploadError": "上传失败，请重试"
+    },
+    
+    "personalInfo": {
+      "title": "个人信息",
+      "fullName": "姓名",
+      "idNumber": "身份证号",
+      "phoneNumber": "电话号码",
+      "email": "电子邮箱",
+      "address": "现住址",
+      "employmentStatus": "就业状态",
+      "employed": "在职",
+      "selfEmployed": "自雇",
+      "unemployed": "失业",
+      "student": "学生",
+      "monthlyIncome": "月收入（元）",
+      "accountHolderName": "账户户名",
+      "accountNumber": "银行账号",
+      "bankName": "开户银行"
+    },
+    
+    "carSelection": {
+      "invalidPrice": "所选车型没有价格信息",
+      "title": "车辆信息",
+      "carBrand": "汽车品牌",
+      "carModel": "车型",
+      "carYear": "生产年份",
+      "carType": "车辆类型",
+      "sedan": "轿车",
+      "suv": "SUV",
+      "electric": "纯电动车",
+      "hybrid": "混合动力车",
+      "carPrice": "车辆价格（元）",
+      "loadBrandError": "加载品牌列表失败，请稍后再试",
+      "loadModelError": "加载车型列表失败，请稍后再试",
+      "loadPriceError": "获取车辆价格失败，请稍后再试",
+      "enterPrice": "请输入车辆价格（元）",
+      "models": {
+        "MINI 三门版": "MINI 三门版",
+        "MINI 五门版": "MINI 五门版",
+        "MINI COUNTRYMAN": "MINI COUNTRYMAN",
+        "MINI EV": "MINI EV",
+        "幻影": "幻影",
+        "古斯特": "古斯特",
+        "库里南": "库里南",
+        "闪灵": "闪灵",
+        "1系": "1系",
+        "3系": "3系",
+        "5系": "5系",
+        "7系": "7系",
+        "X1": "X1",
+        "X3": "X3",
+        "X5": "X5",
+        "i3": "i3",
+        "iX3": "iX3"
+      }
+    },
+    
+    "loanDetails": {
+      "title": "贷款信息",
+      "downPayment": "首付款比例",
+      "downPaymentAmount": "首付款金额（元）",
+      "loanAmount": "贷款总额（元）",
+      "interestRate": "年利率",
+      "loanTerm": "贷款期限",
+      "loanStartDate": "贷款开始日",
+      "loanEndDate": "贷款结束日",
+      "repaymentFrequency": "还款周期",
+      "monthly": "每月",
+      "quarterly": "每季度",
+      "yearly": "每年",
+      "monthlyPayment": "每期还款额（元）",
+      "repaymentDate": "每期还款日",
+      "repaymentMethod": "还款方式",
+      "equalPrincipalInterest": "等额本息",
+      "equalPrincipal": "等额本金"
+    },
+    
+    "documentUpload": {
+      "title": "文件上传",
+      "upload": "上传文件",
+      "uploading": "上传中...",
+      "allowedTypes": "允许的类型：JPG、PNG、PDF、DOC、DOCX",
+      "idCard": "身份证",
+      "incomeProof": "收入证明",
+      "creditReport": "征信报告",
+      "salarySlip": "工资流水",
+      "other": "其他",
+      "view": "查看",
+      "delete": "删除",
+      "noDocuments": "尚未上传任何文件"
+    }
+  },
+  "adminDashboard":{
+    "columns":{
+      "applicationId":"申请书ID",
+      "applicantName":"申请者",
+      "applicationDate":"申请日期",
+      "status":"状态",
+      "actions":"操作"
+    },
+    "title":"贷款申请列表",
+    "viewDetails":"详情"
+  }
+}

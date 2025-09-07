@@ -1,0 +1,37 @@
+[
+    {
+        "id": "CHECK-01",
+        "title": "Total & Monthly Payment",
+        "content": "Contract shows the total amount to repay and the monthly payment amount.",
+        "check_points": [
+            "Total repayment amount is present",
+            "Monthly payment amount is written"
+        ]
+    },
+    {
+        "id": "CHECK-02",
+        "title": "APR Mention",
+        "content": "Contract includes the APR (e.g., 'APR: 5%').",
+        "check_points": [
+            "APR is listed with a percentage"
+        ]
+    },
+    {
+        "id": "CHECK-03",
+        "title": "14-Day Cancellation",
+        "content": "Contract says the borrower can cancel within 14 days.",
+        "check_points": [
+            "14-day cancellation period is mentioned"
+        ]
+    },
+    {
+        "id": "CHECK-04",
+        "title": "Vehicle as Collateral (if applicable)",
+        "content": "If the vehicle secures the loan, contract says so and includes the vehicle's VIN.",
+        "check_points": [
+            "Vehicle VIN is present (if used as collateral)",
+            "Mentions vehicle secures the loan (if applicable)"
+        ]
+    }
+]
+    

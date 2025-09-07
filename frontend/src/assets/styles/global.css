@@ -1,0 +1,10 @@
+/* 引入Font Awesome图标 必须放在最顶部 */
+@import url('https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css');
+
+/* 全局样式：其他样式放在@import之后 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
